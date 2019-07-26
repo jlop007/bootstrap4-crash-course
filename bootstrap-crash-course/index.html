@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Crash Course</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        h5{
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        h5 span{
+            text-transform: lowercase;
+        }
+
+        .course-heading{
+            text-align: center;
+            text-transform: uppercase;
+            color: #7A43B6;
+            border: 5px solid #7A43B6;
+            margin: 50px 0;
+            padding: 10px;
+        }
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        /*No media query for `xs` since this is the default in Bootstrap*/
+
+        /*Small (-sm-) devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) {
+
+        }
+        /*Medium (-md-) devices (tablets, 768px and up)*/
+        @media (min-width: 768px) {
+
+        }
+        /*Large (-lg-) devices (desktops, 992px and up)*/
+        @media (min-width: 992px) {
+
+        }
+        /*Extra large (-xl-) devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {
+
+        }
+    </style>
+</head>
+<body>
+<!--Most commonly used utilities-->
+<div class="container pb-5">
+
+    <!--Spacing - Margin & Padding-->
+    <h3 class="course-heading">Margin & Padding</h3>
+
+    <h5>Margin on all sides - <span>.m</span></h5>
+    <div class="bg-primary text-white m-1">.m-1 (margin: 4px;)</div>
+    <div class="bg-success text-white m-2">.m-2 (margin: 8px;)</div>
+    <div class="bg-danger text-white m-3">.m-3 (margin: 16px;)</div>
+    <div class="bg-warning text-white m-4">.m-4 (margin: 24px;)</div>
+    <div class="bg-info text-white m-5">.m-5 (margin: 48px;)</div>
+
+    <hr>
+
+    <h5>Margin left - <span>.ml</span></h5>
+    <div class="bg-primary text-white ml-1">.ml-1 (margin-left: 4px;)</div>
+    <div class="bg-success text-white ml-2">.ml-2 (margin-left: 8px;)</div>
+    <div class="bg-danger text-white ml-3">.ml-3 (margin-left: 16px;)</div>
+    <div class="bg-warning text-white ml-4">.ml-4 (margin-left: 24px;)</div>
+    <div class="bg-info text-white ml-5">.ml-5 (margin-left: 48px;)</div>
+
+    <hr>
+
+    <h5>Margin right - <span>.mr</span></h5>
+    <div class="bg-primary text-white mr-1">.mr-1 (margin-right: 4px;)</div>
+    <div class="bg-success text-white mr-2">.mr-2 (margin-right: 8px;)</div>
+    <div class="bg-danger text-white mr-3">.mr-3 (margin-right: 16px;)</div>
+    <div class="bg-warning text-white mr-4">.mr-4 (margin-right: 24px;)</div>
+    <div class="bg-info text-white mr-5">.mr-5 (margin-right: 48px;)</div>
+
+    <hr>
+
+    <h5>Margin top - <span>.mt</span></h5>
+    <div class="bg-primary text-white mt-1">.mt-1 (margin-top: 4px;)</div>
+    <div class="bg-success text-white mt-2">.mt-2 (margin-top: 8px;)</div>
+    <div class="bg-danger text-white mt-3">.mt-3 (margin-top: 16px;)</div>
+    <div class="bg-warning text-white mt-4">.mt-4 (margin-top: 24px;)</div>
+    <div class="bg-info text-white mt-5">.mt-5 (margin-top: 48px;)</div>
+
+    <hr>
+
+    <h5>Margin bottom - <span>.mb</span></h5>
+    <div class="bg-primary text-white mb-1">.mb-1 (margin-bottom: 4px;)</div>
+    <div class="bg-success text-white mb-2">.mb-2 (margin-bottom: 8px;)</div>
+    <div class="bg-danger text-white mb-3">.mb-3 (margin-bottom: 16px;)</div>
+    <div class="bg-warning text-white mb-4">.mb-4 (margin-bottom: 24px;)</div>
+    <div class="bg-info text-white mb-5">.mb-5 (margin-bottom: 48px;)</div>
+
+    <h5>Margin auto - <span>.m-auto</span></h5>
+    <div class="bg-primary text-white m-auto" style="width: 300px;">.m-auto (margin: auto;)</div>
+
+    <hr>
+
+    <h5>Responsive Margin Example</h5>
+    <div class="bg-primary text-white ml-5 ml-sm-0 ml-md-5 ml-lg-0 m-xl-5">Screen sizes: extra small .ml-5 | small .ml-0 | medium .ml-5 | large .ml-0 | extra large .m-5</div>
+
+    <hr>
+
+    <h5>padding on all sides - <span>.p</span></h5>
+    <div class="bg-primary text-white p-1">.p-1 (padding: 4px;)</div>
+    <div class="bg-success text-white p-2">.p-2 (padding: 8px;)</div>
+    <div class="bg-danger text-white p-3">.p-3 (padding: 16px;)</div>
+    <div class="bg-warning text-white p-4">.p-4 (padding: 24px;)</div>
+    <div class="bg-info text-white p-5">.p-5 (padding: 48px;)</div>
+
+    <hr>
+
+    <h5>padding left - <span>.pl</span></h5>
+    <div class="bg-primary text-white pl-1">.pl-1 (padding-left: 4px;)</div>
+    <div class="bg-success text-white pl-2">.pl-2 (padding-left: 8px;)</div>
+    <div class="bg-danger text-white pl-3">.pl-3 (padding-left: 16px;)</div>
+    <div class="bg-warning text-white pl-4">.pl-4 (padding-left: 24px;)</div>
+    <div class="bg-info text-white pl-5">.pl-5 (padding-left: 48px;)</div>
+
+    <hr>
+
+    <h5>padding right - <span>.pr</span></h5>
+    <div class="bg-primary text-white pr-1">.pr-1 (padding-right: 4px;)</div>
+    <div class="bg-success text-white pr-2">.pr-2 (padding-right: 8px;)</div>
+    <div class="bg-danger text-white pr-3">.pr-3 (padding-right: 16px;)</div>
+    <div class="bg-warning text-white pr-4">.pr-4 (padding-right: 24px;)</div>
+    <div class="bg-info text-white pr-5">.pr-5 (padding-right: 48px;)</div>
+
+    <hr>
+
+    <h5>padding top - <span>.pt</span></h5>
+    <div class="bg-primary text-white pt-1">.pt-1 (padding-top: 4px;)</div>
+    <div class="bg-success text-white pt-2">.pt-2 (padding-top: 8px;)</div>
+    <div class="bg-danger text-white pt-3">.pt-3 (padding-top: 16px;)</div>
+    <div class="bg-warning text-white pt-4">.pt-4 (padding-top: 24px;)</div>
+    <div class="bg-info text-white pt-5">.pt-5 (padding-top: 48px;)</div>
+
+    <hr>
+
+    <h5>padding bottom - <span>.pb</span></h5>
+    <div class="bg-primary text-white pb-1">.pb-1 (padding-bottom: 4px;)</div>
+    <div class="bg-success text-white pb-2">.pb-2 (padding-bottom: 8px;)</div>
+    <div class="bg-danger text-white pb-3">.pb-3 (padding-bottom: 16px;)</div>
+    <div class="bg-warning text-white pb-4">.pb-4 (padding-bottom: 24px;)</div>
+    <div class="bg-info text-white pb-5">.pb-5 (padding-bottom: 48px;)</div>
+
+    <h5>Responsive padding Example</h5>
+    <div class="bg-primary text-white pl-5 pl-sm-0 pl-md-5 pl-lg-0 p-xl-5">Screen sizes: Extra small pl-5 | small pl-0 | medium pr-5 | large ml-0 | extra large p-5</div>
+
+    <!--TEXT ALIGNMENT-->
+    <!--Easily realign text to components with text alignment classes.-->
+    <h3 class="course-heading">Text Alignment</h3>
+
+    <p class="text-left">.text-left (Left aligned text on all viewport sizes.)</p>
+    <p class="text-center">.text-center (Center aligned text on all viewport sizes.)</p>
+    <p class="text-right">.text-right (Right aligned text on all viewport sizes.)</p>
+
+    <h5>Responisve text alignment example</h5>
+    <p class="text-sm-left">.text-sm-left (Left aligned text on screens sized SM (small) or wider.)</p>
+    <p class="text-md-right">.text-md-right (Right aligned text on screens sized MD (medium) or wider.)</p>
+    <p class="text-lg-right">.text-lg-right (Right aligned text on screens sized LG (large) or wider.)</p>
+    <p class="text-xl-right">.text-xl-right (Right aligned text on screens sized XL (extra-large) or wider.)</p>
+
+    <!--TEXT TRANSFORMS-->
+    <!--Transform text in components with text capitalization classes.-->
+    <h3 class="course-heading">Text transforms</h3>
+
+    <p class="text-lowercase">.text-lowercase (Lowercased text.)</p>
+    <p class="text-uppercase">.text-uppercase (Uppercased text.)</p>
+    <p class="text-capitalize">.text-capitalized (First letter of each word capitalized.)</p>
+
+    <!--Font weight and italics-->
+    <!--Quickly change the weight (boldness) of text or italicize text.-->
+    <h3 class="course-heading">Font weight & italics</h3>
+
+    <p class="font-weight-bold">.font-weight-bold (Bold text.)</p>
+    <p class="font-weight-normal">.font-weight-normal (Normal weight text.)</p>
+    <p class="font-weight-light">.font-weight-light (Light weight text.)</p>
+    <p class="font-italic">.font-italic (Italic text.)</p>
+
+    <!--Fancy Heading Text-->
+    <!--Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style.-->
+    <h3 class="course-heading">Fancy heading text</h3>
+
+    <h1 class="display-1">.display-1</h1>
+    <h1 class="display-2">.display-2</h1>
+    <h1 class="display-3">.display-3</h1>
+    <h1 class="display-4">.display-4</h1>
+
+    <!--Fancy paragraph Text-->
+    <!--Make a paragraph stand out by adding .lead.-->
+    <h3 class="course-heading">Fancy paragraph text</h3>
+
+    <p>
+        normal paragraph - Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    </p>
+    <p class="lead">
+        .lead (Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor).
+    </p>
+
+    <!--TEXT COLORS-->
+    <!--Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.-->
+    <h3 class="course-heading">Text colors</h3>
+
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning">.text-warning</p>
+    <p class="text-info">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-body">.text-body</p>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <p class="text-black-50">.text-black-50</p>
+    <p class="text-white-50 bg-dark">.text-white-50</p>
+
+    <!--BACKGROUND COLORS-->
+    <!--Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Background utilities do not set color, so in some cases you’ll want to use .text-* utilities.-->
+    <h3 class="course-heading">Background colors</h3>
+
+    <div class="bg-primary text-white">.bg-primary</div>
+    <div class="bg-secondary text-white">.bg-secondary</div>
+    <div class="bg-success text-white">.bg-success</div>
+    <div class="bg-danger text-white">.bg-danger</div>
+    <div class="bg-warning text-dark">.bg-warning</div>
+    <div class="bg-info text-white">.bg-info</div>
+    <div class="bg-light text-dark">.bg-light</div>
+    <div class="bg-dark text-white">.bg-dark</div>
+    <div class="bg-white text-dark">.bg-white</div>
+    <div class="bg-transparent text-dark">.bg-transparent</div>
+
+    <!--Display property-->
+    <!--Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.-->
+    <h3 class="course-heading">Display properties</h3>
+
+    <div class="d-inline bg-primary text-white">.d-inline</div>
+    <span class="d-block bg-warning text-white">.d-block</span>
+    <div class="d-inline-block bg-primary text-white">.d-inline-block</div>
+    <div class="d-sm-none d-lg-block d-xl-none bg-danger text-white">Responsive example - show extra small (default) - hide on small - show large - hide extra large
+    </div>
+    <div class="d-flex bg-success text-white">.d-flex</div>
+    <hr>
+
+    <!--Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.-->
+    <h5>Flexbox - Direction</h5>
+
+    <div class="d-flex flex-row">
+        <div class="p-2 bg-primary">.flex-row</div>
+        <div class="p-2 bg-warning">.flex-row</div>
+        <div class="p-2 bg-info">.flex-row</div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex flex-column">
+        <div class="p-2 bg-primary">.flex-column</div>
+        <div class="p-2 bg-warning">.flex-column</div>
+        <div class="p-2 bg-info">.flex-column</div>
+    </div>
+
+    <hr>
+
+    <!--Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, center, between, or around.-->
+    <h5>Flexbox - Justify Content</h5>
+
+    <div class="d-flex border justify-content-start">
+        <div class="bg-primary">.justify-content-start</div>
+    </div>
+    <div class="d-flex border justify-content-end">
+        <div class="bg-danger">.justify-content-end</div>
+    </div>
+    <div class="d-flex border justify-content-center">
+        <div class="bg-success">.justify-content-center</div>
+    </div>
+    <div class="d-flex border justify-content-between">
+        <div class="bg-warning">.justify-content-between</div>
+        <div class="bg-warning">.justify-content-between</div>
+    </div>
+    <div class="d-flex border justify-content-around">
+        <div class="bg-info">.justify-content-around</div>
+        <div class="bg-info">.justify-content-start</div>
+    </div>
+
+    <!--Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).-->
+    <h5>Flexbox - Align Items</h5>
+    <div class="d-flex border align-items-start" style="height: 50px;">
+        <div class="bg-primary">.justify-content-start</div>
+    </div>
+    <div class="d-flex border align-items-end" style="height: 50px;">
+        <div class="bg-danger">.justify-content-end</div>
+    </div>
+    <div class="d-flex border align-items-center" style="height: 50px;">
+        <div class="bg-success">.justify-content-center</div>
+    </div>
+
+    <a href="https://getbootstrap.com/docs/4.1/utilities/flex/" target="_blank">
+        <h5>Learn more about other Flexbox Properties</h5>
+    </a>
+
+    <!--Border-radius-->
+    <!--Add classes to an element to easily round its corners.-->
+    <h3 class="course-heading">Border-radius</h3>
+
+    <div class="p-5 mb-3 bg-danger rounded-top">.rounded-top (Border radius on top)</div>
+    <div class="p-5 mb-3 bg-danger rounded-bottom">.rounded-bottom (border radius on bottom)</div>
+    <div class="p-5 mb-3 bg-danger rounded-left">.rounded-left (radius left side)</div>
+    <div class="p-5 mb-3 bg-danger rounded-right">.rounded-right (border radius right side)</div>
+    <div class="p-5 mb-3 bg-danger rounded">.rounded (border radius all around)</div>
+    <div class="d-block bg-danger rounded-circle" style="height: 100px; width: 100px;">.rounded-cirlce</div>
+
+    <!--Box Shadow-->
+    <!--Add or remove shadows to elements with box-shadow utilities.-->
+    <h3 class="course-heading">Box Shadow</h3>
+
+    <div class="p-3 mb-5 bg-white shadow-sm">.shadow-sm (Small shadow)</div>
+    <div class="p-3 mb-5 bg-white shadow">.shadow (Regular shadow)</div>
+    <div class="p-3 mb-5 bg-white shadow-lg">.shadow-lg (Larger shadow)</div>
+
+    <!--width and height-->
+    <!--Easily make an element as wide or as tall (relative to its parent) with our width and height utilities.-->
+    <h3 class="course-heading">Width & Height</h3>
+
+    <div class="w-25 p-3 bg-primary">.w-25 (Width 25%)</div>
+    <div class="w-50 p-3 bg-success">.w-50 (Width 50%)</div>
+    <div class="w-75 p-3 bg-warning">.w-75 (Width 75%)</div>
+    <div class="w-100 p-3 bg-info">.w-100 (Width 100%)</div>
+    <div class="w-auto p-3 bg-danger">.w-auto (Width auto)</div>
+
+    <hr>
+
+    <div class="mb-5" style="height: 100px;">
+        <div class="h-25 d-inline-block bg-primary" style="width: 200px;">.h-25 (Height 25%)</div>
+        <div class="h-50 d-inline-block bg-success" style="width: 200px;">.h-50 (Height 50%)</div>
+        <div class="h-75 d-inline-block bg-warning" style="width: 200px;">.75 (Height 75%)</div>
+        <div class="h-100 d-inline-block bg-info" style="width: 200px;">.h-100 (Height 100%)</div>
+        <div class="h-auto d-inline-block bg-danger" style="width: 200px;">.h-auto (Height auto)</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Buttons-->
+    <!--Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.-->
+    <h3 class="course-heading">Buttons</h3>
+
+    <button type="button" class="btn btn-primary">.btn (default button styles)</button>
+    <button type="button" class="btn btn-link">.btn .btn-link</button>
+    <button type="button" class="btn btn-outline-danger">.btn .btn-outline-danger</button>
+    <button type="button" class="btn btn-primary btn-sm">.btn .btn-sm (Large button)</button>
+    <button type="button" class="btn btn-secondary btn-lg">.btn .btn-lg (Large button)</button>
+
+    <h5>Button Groups</h5>
+    <p>.btn-group</p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+
+    <!--Cards-->
+    <!--A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.-->
+    <h3 class="course-heading">Cards & Card groups</h3>
+
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top" src="https://source.unsplash.com/collection/190727/1400x700" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://source.unsplash.com/collection/190727/1400x700" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://source.unsplash.com/collection/190727/1400x700" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <!--Carousel-->
+    <!--A slideshow component for cycling through elements—images or slides of text—like a carousel.-->
+    <h3 class="course-heading">Carousel</h3>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://source.unsplash.com/collection/190727/1400x700" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://source.unsplash.com/collection/190727/1400x700" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://source.unsplash.com/collection/190727/1400x700" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!--Collapse content-->
+    <!--Toggle the visibility of content across your project with a few classes and our JavaScript plugins.-->
+    <h3 class="course-heading">Collapse content</h3>
+
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button">
+        Link with href
+    </a>
+
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample">
+        Button with data-target
+    </button>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+    </div>
+
+    <!--Dropdown content-->
+    <!--Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.-->
+    <h3 class="course-heading">Dropdown content</h3>
+
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
+            Dropdown link
+        </a>
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+    <!--Forms-->
+    <!--Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.-->
+    <h3 class="course-heading">Forms</h3>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!--Jumbotron-->
+    <!--Lightweight, flexible component for showcasing hero unit style content.-->
+    <h3 class="course-heading">Jumbotron</h3>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <!--Nav-->
+    <!--The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.-->
+    <h3 class="course-heading">Nav</h3>
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
+
+    <!--Navbar-->
+    <h3 class="course-heading">Navbar</h3>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--Grid-->
+    <!--powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system-->
+    <h3 class="course-heading">Grid System</h3>
+
+    <div class="container text-white">
+        <!--Full width column-->
+        <div class="row mb-2">
+            <div class="col-12 bg-primary">
+                .col-12
+            </div>
+        </div>
+        <!--12 columns divided by 2-->
+        <div class="row mb-2">
+            <div class="col-6 bg-danger">
+                .col-6
+            </div>
+            <div class="col-6 bg-warning">
+                .col-6
+            </div>
+        </div>
+        <!--12 columns divided by 3-->
+        <div class="row mb-2">
+            <div class="col-4 bg-danger">
+                .col-4
+            </div>
+            <div class="col-4 bg-warning">
+                .col-4
+            </div>
+            <div class="col-4 bg-success">
+                .col-4
+            </div>
+        </div>
+        <!--12 columns divided by 4-->
+        <div class="row mb-2">
+            <div class="col-3 bg-danger">
+                .col-3
+            </div>
+            <div class="col-3 bg-warning">
+                .col-3
+            </div>
+            <div class="col-3 bg-success">
+                .col-3
+            </div>
+            <div class="col-3 bg-info">
+                .col-3
+            </div>
+        </div>
+        <!--12 columns divided by 6-->
+        <div class="row mb-2">
+            <div class="col-2 bg-danger">
+                .col-2
+            </div>
+            <div class="col-2 bg-warning">
+                .col-2
+            </div>
+            <div class="col-2 bg-success">
+                .col-2
+            </div>
+            <div class="col-2 bg-info">
+                .col-2
+            </div>
+            <div class="col-2 bg-dark">
+                .col-2
+            </div>
+            <div class="col-2 bg-secondary">
+                .col-2
+            </div>
+        </div>
+        <!--12 columns divided by 12-->
+        <div class="row mb-2">
+            <div class="col-1 bg-danger">
+                .col-1
+            </div>
+            <div class="col-1 bg-warning">
+                .col-1
+            </div>
+            <div class="col-1 bg-success">
+                .col-1
+            </div>
+            <div class="col-1 bg-info">
+                .col-1
+            </div>
+            <div class="col-1 bg-dark">
+                .col-1
+            </div>
+            <div class="col-1 bg-secondary">
+                .col-1
+            </div>
+            <div class="col-1 bg-danger">
+                .col-1
+            </div>
+            <div class="col-1 bg-warning">
+                .col-1
+            </div>
+            <div class="col-1 bg-success">
+                .col-1
+            </div>
+            <div class="col-1 bg-info">
+                .col-1
+            </div>
+            <div class="col-1 bg-dark">
+                .col-1
+            </div>
+            <div class="col-1 bg-secondary">
+                .col-1
+            </div>
+        </div>
+
+        <h5 class="text-dark">Mix and match columns as long as the total is equal to 12</h5>
+        <!-- 4 and 8 columns = 12-->
+        <div class="row mb-2">
+            <div class="col-4 bg-danger">
+                .col-4
+            </div>
+            <div class="col-8 bg-warning">
+                .col-8
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-6 bg-danger">
+                .col-6
+            </div>
+            <div class="col-3 bg-warning">
+                .col-3
+            </div>
+            <div class="col-3 bg-success">
+                .col-3
+            </div>
+        </div>
+
+        <h5 class="text-dark">Responsive grids example</h5>
+
+        <div class="row mb-2">
+            <div class="col-4 col-md-8 bg-danger">
+                .col-4 on xs-sm and .col-8 on md-xl
+            </div>
+            <div class="col-8 col-md-4 bg-warning">
+                .col-8 on xs-sm and .col-4 on md-xl
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
